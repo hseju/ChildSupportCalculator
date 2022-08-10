@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Thanks {{ email }}!</h1>
+
+{{ email }}
+ 
+{% for email in emails %}
+    <h4> {{ emails.email }} </h4>
+    
+{% endfor %}
+
+
+{% endblock %}
